@@ -1,10 +1,11 @@
 const User = require("../models/user");
+
 module.exports.profile = function (req, res) {
   return res.render("user", {
     title: "User",
   });
 };
-
+8;
 module.exports.signUp = function (req, res) {
   return res.render("user_sign_up", {
     title: "Codeial | Sign Up",
