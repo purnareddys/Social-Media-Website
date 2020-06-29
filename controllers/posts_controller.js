@@ -10,7 +10,9 @@ module.exports.create = function (req, res) {
         console.log("error in creating post");
         return;
       }
-
+      res.render("home", {
+        content: req.body.content,
+      });
       return res.redirect("back");
     }
   );
